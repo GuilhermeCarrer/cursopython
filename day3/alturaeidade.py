@@ -14,11 +14,13 @@ if altura > 120:
         grana = 12
         print("Por favor pague R$12")
 
-    fotos = input("Você deseja tirar uma foto? SIM/NAO")
+    fotos = input("Você deseja tirar uma foto? SIM/NAO: ")
     if fotos == "SIM":
         print("Adicionado mais 3 R$")
         grana = grana +3
     else:
         print("Ok, sem problemas")
+
+    print(f"Sua conta final: {grana}")
 else:
     print("Você não possui altura suficiente para poder andar de montanha russa!")
